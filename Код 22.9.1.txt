@@ -9,7 +9,7 @@ def binary_search(array, element, left, right):
             return binary_search(array, element, left, middle - 1)
     elif element == array[middle - 1]:
             return binary_search(array, element, left, middle - 1)
-    else:  # иначе в правой
+    else:  
             return binary_search(array, element, middle + 1, right)
 array = list(map(int, input("Введите целые числа в любом порядке, через пробел: ").split()))
 element = int(input("Введите любое положительное целое число из введеног списка: "))
